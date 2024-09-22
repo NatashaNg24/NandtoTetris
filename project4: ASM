@@ -1,0 +1,26 @@
+// Multi.asm
+// This program computes R2 = R0 * R1
+
+    @R2
+    M=0     // Sets R2 = 0
+
+    (LOOP)
+    @R1
+    D=M
+    @END
+    D;JLE   // If R1 <= 0, terminate
+
+    @R0
+    D=M
+    @R2
+    M=D+M  // Set R2 to R0
+
+    @R1
+    D=M
+    M=D-1   // Decrement R1
+    @LOOP
+    M;JGT   // If R1 > 0, goto LOOP
+
+    (END)
+    @15 
+    0;JMP   // infinite loop
