@@ -6,4 +6,4 @@
 
     Built core components like RAM, Memory, CPU, and a basic Operating System using primitive Nand chips and Bits
 
-    Coding in low level languages: binary, machine language, assembly etc
+    Coding in low level languages: binary, machine language, assembly etc 
